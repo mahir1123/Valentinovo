@@ -18,7 +18,7 @@ function revealImages() {
         setTimeout(() => {
             image.style.display = "block";  // Make the image visible
             image.style.opacity = 1; // Apply opacity fade-in
-        }, index * 3000); // Delay each image's appearance by 1.5 seconds
+        }, index * 3000); // Delay each image's appearance by 3 seconds
     });
 
     // After all images are shown, reveal the final message
