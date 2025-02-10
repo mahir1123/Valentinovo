@@ -13,6 +13,20 @@ body {
     overflow: hidden; /* Hide overflowing hearts */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hidden-image {
+        max-width: 80%; /* Make images smaller on mobile */
+    }
+    .reveal-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .hidden-message h2 {
+        font-size: 24px;
+    }
+}
+
 /* Heart emoji animation */
 @keyframes heartAnimation {
     0% {
@@ -39,68 +53,16 @@ body {
 }
 
 /* Multiple heart positions with random delays */
-.heart:nth-child(1) {
-    animation-duration: 7s;
-    animation-delay: 0s;
-    left: 10%;
-    top: 80%;
-}
-.heart:nth-child(2) {
-    animation-duration: 6s;
-    animation-delay: 1s;
-    left: 50%;
-    top: 90%;
-}
-.heart:nth-child(3) {
-    animation-duration: 8s;
-    animation-delay: 2s;
-    left: 70%;
-    top: 75%;
-}
-.heart:nth-child(4) {
-    animation-duration: 7.5s;
-    animation-delay: 3s;
-    left: 20%;
-    top: 65%;
-}
-.heart:nth-child(5) {
-    animation-duration: 6s;
-    animation-delay: 1.5s;
-    left: 80%;
-    top: 60%;
-}
-
-/* Add more hearts with random positions */
-.heart:nth-child(6) {
-    animation-duration: 7s;
-    animation-delay: 4s;
-    left: 30%;
-    top: 20%;
-}
-.heart:nth-child(7) {
-    animation-duration: 8s;
-    animation-delay: 2.5s;
-    left: 90%;
-    top: 30%;
-}
-.heart:nth-child(8) {
-    animation-duration: 6.5s;
-    animation-delay: 5s;
-    left: 60%;
-    top: 15%;
-}
-.heart:nth-child(9) {
-    animation-duration: 7.5s;
-    animation-delay: 0s;
-    left: 40%;
-    top: 5%;
-}
-.heart:nth-child(10) {
-    animation-duration: 8s;
-    animation-delay: 1s;
-    left: 50%;
-    top: 20%;
-}
+.heart:nth-child(1) { animation-duration: 7s; animation-delay: 0s; left: 10%; top: 80%; }
+.heart:nth-child(2) { animation-duration: 6s; animation-delay: 1s; left: 50%; top: 90%; }
+.heart:nth-child(3) { animation-duration: 8s; animation-delay: 2s; left: 70%; top: 75%; }
+.heart:nth-child(4) { animation-duration: 7.5s; animation-delay: 3s; left: 20%; top: 65%; }
+.heart:nth-child(5) { animation-duration: 6s; animation-delay: 1.5s; left: 80%; top: 60%; }
+.heart:nth-child(6) { animation-duration: 7s; animation-delay: 4s; left: 30%; top: 20%; }
+.heart:nth-child(7) { animation-duration: 8s; animation-delay: 2.5s; left: 90%; top: 30%; }
+.heart:nth-child(8) { animation-duration: 6.5s; animation-delay: 5s; left: 60%; top: 15%; }
+.heart:nth-child(9) { animation-duration: 7.5s; animation-delay: 0s; left: 40%; top: 5%; }
+.heart:nth-child(10) { animation-duration: 8s; animation-delay: 1s; left: 50%; top: 20%; }
 
 /* Style for the main text and button */
 .reveal-button {
@@ -163,18 +125,9 @@ body {
 }
 
 @keyframes exciteText {
-    0% {
-        transform: scale(1);
-        color: #ff4d6d;
-    }
-    50% {
-        transform: scale(1.5);
-        color: #d6336c;
-    }
-    100% {
-        transform: scale(1);
-        color: #ff4d6d;
-    }
+    0% { transform: scale(1); color: #ff4d6d; }
+    50% { transform: scale(1.5); color: #d6336c; }
+    100% { transform: scale(1); color: #ff4d6d; }
 }
 
 .hidden-message h2 {
